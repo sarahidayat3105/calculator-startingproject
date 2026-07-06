@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    background-image: url(i.avif);
+    background-size: cover;
+}
+.calculator{
+   
+    background-color: rgb(24, 21, 21);
+    border: 2px solid white;
+   padding: 23px;
+   width: 330px;
+   height: 470px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 21px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 10px;
+ filter: none;
+    backdrop-filter: none;
+
+}
+.display{
+    background-color: grey;
+    color: white;
+    height: 29px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: right;
+  background: linear-gradient(black 50% , #f39c12);
+   font-size: 23px;
+   padding: 16px;
+   margin-right: 9px;
+}
+.clear{
+  background: linear-gradient(150deg, #111 25%, #f39c12 50%);
+    z-index: 1;
+    overflow: hidden;
+    background-position: left center;
+     transition: all 2s ease-in-out;
+}
+.equal{
+     background: linear-gradient(40deg, #111 25%, #f39c12 50%);
+    z-index: 1;
+    overflow: hidden;
+    background-position: right center;
+}
+.operator{
+    background: linear-gradient(to left,#f39c12 2% , #111 40%);
+    color: rgb(203, 205, 206);
+    background-position: left center;
+    font-size: 17px;
+}
+.equal{
+    background-color: rgb(255, 178, 83);
+    color: rgb(203, 205, 206);
+    transition: all 2s ease-in-out;
+}
+button{
+   background-color: black;
+   color: white;
+    padding: 12px 8px;
+    filter: none;
+    font-size: 17px;
+    backdrop-filter: none;
+   border-radius: 12px;
+    cursor: pointer;
+    margin-top: 26px;
+    transition: all 1s ease-in-out;
+    cursor-color: red ;
+}
+button:hover{
+    background-color: rgb(225, 219, 219);
+    color:black;
+     box-shadow: 0 0 30px rgba(0, 255, 255, 50);
+     border: none;
+
+}
+.clear:hover{
+background-color: rgb(252, 119, 71);
+background-position: right bottom;
+transform: rotate(180deg);
+ background: linear-gradient(30deg, #111 25%, #f39c12 50%);
+ color: aliceblue;
+}
+.equal:hover{
+    background-color: rgb(252, 119, 71);
+background-position: right bottom;
+transform: rotate(180deg);
+ background: linear-gradient(150deg, #111 25%, #f39c12 50%);
+ color: aliceblue;
+}
+.operator:hover{
+    
+    color: white;
+}
